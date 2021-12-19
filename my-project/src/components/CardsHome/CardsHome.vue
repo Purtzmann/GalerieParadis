@@ -50,7 +50,8 @@ export default {
         height: 300px;
    }
     @media(max-width: 450px){
-        width: 375px;
+        width: 290px;
+        height: 200px;
    }
 
 }
@@ -58,6 +59,9 @@ export default {
 
 .oeuvre{
    max-width: 500px;
+      @media(max-width: 450px){
+         max-width: 300px;
+      }
 }
 
 .overlay{

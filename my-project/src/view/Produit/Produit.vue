@@ -69,8 +69,15 @@ export default {
    }
 
    .produit__img{
+      @media(max-width: 450px){
+      width: 300px;
+      }
       img{
          border-radius:10px ;
+         @media(max-width: 450px){
+            width: 300px;
+            border-radius:5px
+         }
       }
    }
 
@@ -79,6 +86,10 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       max-width: 40%;
+      @media(max-width: 850px){
+         max-width: 96%;
+      }
+      
 
 
       .informations__haut{
@@ -87,14 +98,25 @@ export default {
             margin-top: 15px;
             font-size: 30px;
             white-space: pre-wrap;
+            @media(max-width: 450px){
+               margin-top: 0px;
+               font-size: 20px;
+            }
          }
          .informations__artiste{
             margin-top: 15px;
             font-size: 25px;
+            @media(max-width: 450px){
+               margin-top: 8px;
+               font-size: 20px;
+            }
          }
          .informations__prix{
             margin-top: 15px;
             font-size: 30px;
+            @media(max-width: 450px){
+               font-size: 25px;
+            }
             &--vendu{
                display: flex;
                justify-content: center;
@@ -112,11 +134,18 @@ export default {
       .informations__bas{
 
          margin-bottom: 25px;
+         @media(max-width: 450px){
+            margin-top: 25px;
+         }
 
          h3{
             font-size: 25px;
             margin-bottom: 15px;
             font-weight: 600;
+            @media(max-width: 450px){
+               font-size: 20px;
+               margin-bottom: 25px;
+            }
          }
          .informations__main{
             margin-top: 10px;

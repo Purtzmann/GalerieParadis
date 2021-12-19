@@ -106,6 +106,9 @@ header{
             @media(max-width: 900px){
                font-size:45px
             }
+            @media(max-width: 450px){
+               font-size:34px
+            }
          }
       }
 
@@ -139,6 +142,9 @@ header{
       right: 25px;
       height: 25px;
       width: auto;
+      @media(max-width: 450px){
+         top:40px;
+      }
    }
 
    .mobile-nav{

@@ -25,7 +25,9 @@ export default new Vuex.Store({
           { id: 13, titre: "ENJOLIVEUR N*29", price: 60, img: require('../assets/GalerieAudeEnjolive/ENJOLIVEUR_N29.jpg'), dimension: '42 x 42cm', peinture:'Peinture Acrylique et papier', artiste: "AudeEnjolive"},
           { id: 14, titre: "ENJOLIVEUR N*31", price: "Vendu", img: require('../assets/GalerieAudeEnjolive/ENJOLIVEUR_N31.jpg'), dimension: '41.8 x 41.8cm', peinture:'Peinture Acrylique', artiste: "AudeEnjolive"},
           { id: 15, titre: "ENJOLIVEUR N*37", price: 35, img: require('../assets/GalerieAudeEnjolive/ENJOLIVEUR_N37.jpg'), dimension: '39 x 39cm', peinture:'Peinture Acrylique', artiste: "AudeEnjolive"},  
+          { id: 16, titre: "ENJOLIVEUR N*39", price: 60, img: require('../assets/GalerieAudeEnjolive/ENJOLIVEUR_N39.jpg'), dimension: '42 x 42cm', peinture:'Peinture Acrylique', artiste: "AudeEnjolive"},  
       ],
+      GalerieAudeEnjoliveHome:[],
       GalerieBMerci:[
         { id: 1, titre: "Bords de Charente un après-midi d’hiver", price: 700, img: require('../assets/GalerieBMerci/Bords-de Charente-un après-midi-dhiver.jpg'), dimension: '73 x 60cm', peinture:'Peinture Acrylique', artiste: "T'M"},
         { id: 2, titre: "Lumières célestes", price: 1000, img: require('../assets/GalerieBMerci/Lumières-célestes.jpg'), dimension: '116 x 89cm', peinture:'Peinture à l\'huile', artiste: "T'M"},
@@ -41,7 +43,16 @@ export default new Vuex.Store({
    },
    getters:{
     galerieAudeEnjoliveHome(state){
-      return state.GalerieAudeEnjolive.slice(0, 3)
+      let tab1 = state.GalerieAudeEnjolive[9]
+      let tab2 = state.GalerieAudeEnjolive[14]
+      let tab3 = state.GalerieAudeEnjolive[15]
+      
+      state.GalerieAudeEnjoliveHome.push(tab1)
+      state.GalerieAudeEnjoliveHome.push(tab2)
+      state.GalerieAudeEnjoliveHome.push(tab3)
+      console.log(state.GalerieAudeEnjoliveHome)
+      
+      return state.GalerieAudeEnjoliveHome
     },
     galerieBMerciHome(state){
       return state.GalerieBMerci.slice(0, 3)

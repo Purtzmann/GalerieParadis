@@ -90,11 +90,18 @@ export default {
    margin-top: 40px;
    margin-bottom: 20px;
    padding: 25px;
+      @media(max-width: 450px){
+            margin-top: 20px;
+            margin-bottom: 0px;
+      }
 
 }
 
 .accueil__title{
    font-size: 30px;
+      @media(max-width: 450px){
+         font-size: 25px;
+      }
 }
 
 .accueil__title:hover{

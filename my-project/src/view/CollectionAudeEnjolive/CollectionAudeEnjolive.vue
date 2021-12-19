@@ -46,6 +46,12 @@ export default {
 
 .title{
    font-size: 20px;
+   @media(max-width: 450px){
+      font-size: 15px;
+   }
+   @media(max-width: 330px){
+      font-size: 12px;
+   }
 }
 
 h1{
