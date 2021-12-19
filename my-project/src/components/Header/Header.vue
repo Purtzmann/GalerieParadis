@@ -2,7 +2,7 @@
    <header>
    <nav class="container">
          <div class="branding">
-            <router-link class="header" :to="{name: 'Accueil'}">GALARIE PARADIS</router-link>
+            <router-link class="header" :to="{name: 'Accueil'}">GALERIE PARADIS</router-link>
          </div>
          <div class="nav-links">
             <ul v-show="!mobile">
@@ -15,9 +15,9 @@
    <menuIcon @click="toggleMobileNav" class="menu-icon" v-show="mobile" />
    <transition name="mobile-nav">
       <ul class="mobile-nav" v-show="mobileNav">
-               <router-link class="link" :to="{name: 'Accueil'}">Galeries</router-link>
-               <router-link class="link" :to="{ name: 'Apropos'}">A propos</router-link>
-               <router-link class="link" :to="{ name: 'Contact'}">Contact</router-link>
+               <router-link class="link" :to="{name: 'Accueil'}"><p @click="toggleMobileNav">Galeries</p></router-link>
+               <router-link class="link" :to="{ name: 'Apropos'}"><p @click="toggleMobileNav">A propos</p></router-link>
+               <router-link class="link" :to="{ name: 'Contact'}"><p @click="toggleMobileNav">Contact</p></router-link>
       </ul>
    </transition>
    </header>

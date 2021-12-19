@@ -49,6 +49,9 @@ export default {
         width: 375px;
         height: 300px;
    }
+    @media(max-width: 450px){
+        width: 375px;
+   }
 
 }
 

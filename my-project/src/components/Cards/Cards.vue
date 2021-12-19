@@ -81,6 +81,13 @@ export default {
    display: flex;
    flex-direction: column;
    margin-bottom: 0px;
+   @media(max-width: 600px){
+      width: 350px;
+   }
+
+   @media(max-width: 450px){
+      width: 300px;
+   }
    
 }
 
@@ -136,6 +143,18 @@ export default {
    display: flex;
    align-items: center;
    justify-content: right;
+   @media(max-width: 600px){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 350px;
+   }
+   @media(max-width: 450px){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+   }
 }
 
 img{
@@ -176,6 +195,14 @@ img{
       font-size: 25px;
       background-color: rgb(255, 209, 124);
       padding: 10px;
+      @media(max-width: 600px){
+         font-size: 20px;
+         padding: 8px;
+   }
+      @media(max-width: 450px){
+         font-size: 18px;
+         padding: 6px;
+   }
    }
 }
 

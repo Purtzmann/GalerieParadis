@@ -6,7 +6,7 @@
       </div>
       <div class="apropos__artistes" >
          <div class="artiste__name">
-            <h2>BMmerci</h2>
+            <h2>T'M</h2>
          </div>
          <div class="artiste__separateur"></div>
          <div class="artiste__content">

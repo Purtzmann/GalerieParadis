@@ -20,8 +20,8 @@ const routes = [
      }
    },
    {
-     path: "/Collection_BMerci",
-     name: "CollectionBMerci",
+     path: "/Collection_TM",
+     name: "CollectionT'M",
      component: CollectionBMerci,
      meta:{
        title: 'CollectionBMerci'

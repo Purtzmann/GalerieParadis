@@ -34,7 +34,7 @@ export default {
 
 
    async mounted(){
-      if(this.currentArtiste === "BMerci"){
+      if(this.currentArtiste === "T'M"){
          this.currentTab = await this.$store.state.GalerieBMerci.filter((tab) =>{
          return tab.id === this.$route.params.id;
          })

@@ -6,7 +6,7 @@
      <section class="accueil__collection">
         <div class="collections">
             <div class="collection">
-               <h3 class="accueil__title"><router-link to='/Collection_BMerci'>Collection artiste B Merci</router-link></h3>
+               <h3 class="accueil__title"><router-link to='/Collection_BMerci'>Collection artiste T'M</router-link></h3>
                <div class="title__separateur"></div>
                <div class="collection__oeuvres" >
                   <CardsHome v-for="(tab, index) in galerieBMerciHome" v-bind:key="index" :tab="tab"/>

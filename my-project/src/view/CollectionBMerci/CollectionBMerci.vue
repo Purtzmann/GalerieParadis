@@ -1,7 +1,7 @@
 <template>
    <div class="collection">
       <div class="collection__title">
-         <div class="title"><h1>Collection BMerci</h1></div>
+         <div class="title"><h1>Collection T'M</h1></div>
          <div class="title__separateur"></div>
       </div>
       <div class="collection__tableaux " >
