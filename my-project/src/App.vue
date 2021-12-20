@@ -1,5 +1,5 @@
 <template>
-  <div id="app" v-if="this.$store.state.postLoaded">
+  <div id="app" >
     <header-top></header-top>
     <router-view></router-view>
     <footer-bot></footer-bot>
@@ -17,13 +17,16 @@ export default {
   name: 'App',
   data(){
     return{
-
+      
     }
     
   },
   components: {
     "header-top" : Header,
     "footer-bot" : Footer,
+  },
+  computed:{
+    
   }
 }
 </script>

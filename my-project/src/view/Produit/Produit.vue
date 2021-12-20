@@ -1,5 +1,5 @@
 <template>
-   <div class="produit" v-if="currentTab">
+   <div class="produit" >
       <div class="container">
          <div class="produit__img">
             <img :src="currentTab[0].img" alt="">
@@ -31,19 +31,22 @@ export default {
          currentTab: null,
       }
    },
-
-
+   
+   methods: {
+    
+  },
    async mounted(){
-      if(this.currentArtiste === "T'M"){
-         this.currentTab = await this.$store.state.GalerieBMerci.filter((tab) =>{
+      if( await this.currentArtiste === "T'M"){
+         this.currentTab =  await this.$store.state.GalerieBMerci.filter((tab) =>{
          return tab.id === this.$route.params.id;
          })
-      } else if(this.currentArtiste === "AudeEnjolive"){
+      } else if( await this.currentArtiste === "AudeEnjolive"){
          this.currentTab = await this.$store.state.GalerieAudeEnjolive.filter((tab) =>{
          return tab.id === this.$route.params.id;
-         })
-      }
+            })
+         }
    },
+   
 }
 </script>
 

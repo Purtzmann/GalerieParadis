@@ -24,7 +24,7 @@ export default {
       galerieAudeEnjolive(){
          return this.$store.state.GalerieAudeEnjolive
       },
-   }
+   },
 }
 </script>
 

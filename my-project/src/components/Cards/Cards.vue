@@ -32,6 +32,10 @@
             <div v-else class="card__price--vendu"><p>{{ props.price }}</p></div>
            
          </div>
+         <div class="separateur">
+            <div class="separateur__mobile"></div>
+         </div>
+         
       </div>
    </div>
 </template>
@@ -62,8 +66,6 @@ export default {
          setTimeout(()=>{
             this.active = !this.active
          }, 5000)
-
-         
       }
    }
    
@@ -111,7 +113,6 @@ export default {
   width: 0px;
 }
 
-
 .overlay__zoom{
    background-color: #fff;
    border-radius: 50px;
@@ -122,10 +123,25 @@ export default {
    justify-content: center;
    border: solid 3px rgb(54, 54, 54);
    cursor: pointer;
-   
 }
 
+.separateur{
+   display: none;
+   @media(max-width: 850px){
+      display: block;
+      display: flex;
+      justify-content: flex-end;
+   }
 
+   .separateur__mobile{
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 50%;
+      height: 5px;
+   }
+}
 
 .overlay__color{
    height: 40%;
@@ -134,7 +150,6 @@ export default {
    justify-content: space-between;
    align-items: center;
 }
-
 
 .card__img{
    width: 420px;
@@ -160,9 +175,7 @@ export default {
 img{
    max-width: 420px;
    cursor: pointer;
-   
 }
-
 
 .card__title{
    font-size: 22px;
@@ -187,22 +200,23 @@ img{
 
 .card__price{
    font-weight: 700;
-   font-size: 25px;
+   font-size: 23px;
    padding: 10px;
 
    &--vendu{
       font-weight: 900;
-      font-size: 25px;
+      font-size: 20px;
       background-color: rgb(255, 209, 124);
       padding: 10px;
+      margin-right: 15px;
       @media(max-width: 600px){
-         font-size: 20px;
+         font-size: 18px;
          padding: 8px;
-   }
+      }
       @media(max-width: 450px){
          font-size: 18px;
          padding: 6px;
-   }
+      }
    }
 }
 
